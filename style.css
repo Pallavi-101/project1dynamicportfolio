@@ -1,0 +1,886 @@
+/* Reset Styles */
+                             /* Developed By Ishwar Bhukele (EPL) */
+                             /* Devloped By Sonali Girje (EPL) */
+                             /* Devloped By vaishnavi Dhadray (EPL) */
+                             * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                font-family: "Arial", sans-serif;
+                                scroll-behavior: smooth;
+                            }
+                            
+                            body {
+                                background-color: #2c3e50;
+                            }
+                            
+                            /* Navigation Bar */
+                            header {
+                                background: rgba(0, 0, 0, 0.8);
+                                color: white;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 15px 20px;
+                                position: fixed;
+                                width: 100%;
+                                top: 0;
+                                z-index: 1000;
+                            }
+                            
+                            .logo {
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+                            
+                            .logo span {
+                                color: #ff5733;
+                            }
+                            
+                            nav ul {
+                                list-style: none;
+                                display: flex;
+                            }
+                            
+                            nav ul li {
+                                margin: 0 15px;
+                            }
+                            
+                            nav ul li a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 18px;
+                                transition: 0.3s;
+                            }
+                            
+                            nav ul li a:hover {
+                                color: #ff5733;
+                            }
+                            
+                            .menu-toggle {
+                                display: none;
+                                font-size: 30px;
+                                cursor: pointer;
+                            }
+                            
+                            /* Home Section */
+                            #home {
+                                background: url('background1.jpg') no-repeat center center/cover;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100vh;
+                                padding: 20px;
+                                text-align: center;
+                            }
+                            
+                            .home-box {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                background: rgba(255, 255, 255, 0.1);
+                                padding: 20px;
+                                border-radius: 10px;
+                                backdrop-filter: blur(10px);
+                                width: 90%;
+                                max-width: 500px;
+                            }
+                            
+                            .home-box h1 {
+                                font-size: 32px;
+                                color:#ff3406;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .home-box p {
+                                font-size: 18px;
+                                margin-bottom: 20px;
+                            }
+                            
+                            .home-box .btn {
+                                display: inline-block;
+                                padding: 12px 25px;
+                                background: #ff5733;
+                                color: white;
+                                text-decoration: none;
+                                font-size: 18px;
+                                border-radius: 5px;
+                                transition: 0.3s;
+                            }
+                            
+                            .home-box .btn:hover {
+                                background: #e74c3c;
+                            }
+                            
+                            .circle-image {
+                                width: 150px;
+                                height: 150px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                margin: 15px 0;
+                                border: 5px solid white;
+                            }
+                            
+                            .createbtn {
+                                display: inline-block;
+                                padding: 12px 25px;
+                                background: #ff5733;
+                                color: white;
+                                text-decoration: none;
+                                font-size: 18px;
+                                border-radius: 5px;
+                                transition: 0.3s;
+                            }
+                            
+                            .createbtn:hover {
+                                background: #e74c3c;
+                            }
+                            /* Responsive Design */
+                            @media (max-width: 768px) {
+                                header {
+                                    flex-direction: row;
+                                }
+                            
+                                nav ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    background: rgba(0, 0, 0, 0.9);
+                                    position: absolute;
+                                    top: 60px;
+                                    right: 0;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            
+                                nav ul.show {
+                                    display: flex;
+                                }
+                            
+                                nav ul li {
+                                    margin: 15px 0;
+                                }
+                            
+                                .menu-toggle {
+                                    display: block;
+                                }
+                            
+                                #home {
+                                    flex-direction: column;
+                                    text-align: center;
+                                }
+                            }
+                            
+                            
+                            /* my work section */
+                            
+                            *{
+                                margin: 0px;
+                                padding: 0px;
+                                box-sizing: border-box;
+                                font-family: sans-serif;
+                            }
+                            body{
+                                width: 100%;
+                                background-color: #809faa;
+                            }
+                            .title h2{
+                                text-align: center;
+                                padding-top: 50px;
+                                font-size: 42px;
+                            }
+                            .title h2::after{
+                                content: "";
+                                height: 4px;
+                                width: 230px;
+                                background-color: #000;
+                                display: block;
+                                margin: auto;
+                            }
+                            .services{
+                                width: 85%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 75px auto;
+                                text-align: center;
+                            }
+                            .card{
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-direction: column;
+                                margin:0px 20px ;
+                                padding: 20px 20px;
+                                background-color:#8cbfee ;  /* #8cbfee */
+                                border-radius: 10px;
+                                cursor: pointer;
+                            }
+                            .card:hover{
+                                background-color:#0d475c;
+                                transition: 0.4s ease;
+                            }
+                            .card icon{
+                                font-size: 40px;
+                            }
+                            
+                             
+                            
+                            .card h2{
+                                font-size: 28px;
+                                margin-bottom: 28px;
+                                color:#c94f4f;
+                            }
+                            @media screen and (max-width: 940px){
+                            
+                                .services{
+                                display: flex;
+                                flex-direction:column;
+                            
+                            }
+                            .card{
+                                width:85%;
+                                display: flex;
+                                margin:20px 0;
+                            }
+                            }
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            /* contact section csss */
+                            
+                            body {
+                                margin: 0;
+                                font-family: Arial, sans-serif;
+                                background: linear-gradient(to bottom, #ff7f50, #ffa07a);
+                                text-align: center;
+                              }
+                              
+                              .container {
+                                padding: 20px;
+                             
+                              }
+                              
+                              .contact-section {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                /* background-color:#8cbfee; */
+                                padding: 30px;
+                                border-radius: 10px;
+                                max-width: 900px;
+                                margin: auto;
+                                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                                flex-wrap: wrap;
+                              }
+                              
+                              .social-media, .contact-form {
+                                flex: 1;
+                                min-width: 300px;
+                                padding: 10px;
+                                /* background-color:#8cbfee; */
+                            
+                              }
+                              
+                              .social-media h2, .contact-form h2 {
+                                font-size: 24px;
+                                font-weight: bold;
+                                animation: fadeIn 2s ease-in-out;
+                              }
+                              
+                              .icons a {
+                                margin: 10px;
+                                display: inline-block;
+                              }
+                              
+                              .icons img {
+                                width: 40px;
+                                height: 40px;
+                                transition: transform 0.3s ease-in-out;
+                              }
+                              
+                              .icons img:hover {
+                                transform: scale(1.2);
+                              }
+                              
+                              .contact-form {
+                                display: flex;
+                                flex-direction: column;
+                              }
+                              
+                              .contact-form input, .contact-form textarea {
+                                width: 100%;
+                                padding: 10px;
+                                margin: 10px 0;
+                                border: 1px solid #ccc;
+                                border-radius: 5px;
+                              }
+                              
+                              .contact-form button {
+                                 background: aqua;        /*   #ff7f50 */
+                                color: black;
+                                border: none;
+                                font-weight: bold;
+                                padding: 10px;
+                                cursor: pointer;
+                                border-radius: 5px;
+                                transition: background 0.3s, transform 0.2s;
+                              }
+                              
+                              .contact-form button:hover {
+                                background: #ff6347;
+                                transform: scale(1.05);
+                              }
+                              
+                              .success-message {
+                                display: none;
+                                color: green;
+                                font-size: 18px;
+                                margin-top: 10px;
+                                animation: fadeIn 1s ease-in-out;
+                              }
+                              
+                              footer {
+                                background: black;
+                                color: white;
+                                padding: 20px;
+                               height: 200px;
+                            
+                              }
+                              
+                              #topBtn {
+                                background: #ff7f50;
+                                border: none;
+                                padding: 10px 20px;
+                                color:bl;
+                                cursor: pointer;
+                                border-radius: 5px;
+                                margin-top: 3%;
+                                text-align: center;
+                              }
+                              
+                              @keyframes fadeIn {
+                                from { opacity: 0; transform: translateY(-10px); }
+                                to { opacity: 1; transform: translateY(0); }
+                              }
+                              
+                              @media (max-width: 768px) {
+                                .contact-section {
+                                    flex-direction: column;
+                                    text-align: center;
+                                }
+                                .contact-form button {
+                                    width: 100%;
+                                }
+                              }
+                            
+                              /* General Styles */
+                            body {
+                                font-family: 'Arial', sans-serif;
+                                margin: 0;
+                                padding: 0;
+                                background: #f4f4f4;
+                            }
+                            
+                            .design2 {
+                                padding: 4rem 2rem;
+                                /* background: linear-gradient(#262525, #5db9ee); */
+                                text-align: center;
+                                color: #fff;
+                            }
+                            
+                            .design2 img {
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                                margin-bottom: 2rem;
+                                box-shadow: 
+                                    0 0 1rem #fff,
+                                    inset 0 0 1rem #fff,
+                                    0 0 2rem #3877FF,
+                                    inset 0 0 2rem #3877FF,
+                                    0 0 4rem #3877FF,
+                                    inset 0 0 4rem #3877FF;
+                                border: 2px solid rgb(255, 255, 255);
+                                transition: transform 0.3s ease;
+                            }
+                            
+                            .design2 img:hover {
+                                transform: scale(1.1);
+                            }
+                            
+                            .design2 p {
+                                font-size: 4rem;
+                                margin-bottom: 1rem;
+                                font-weight: bold;
+                            }
+                            
+                            .design2 p2 {
+                                font-size: 1.5rem;
+                                line-height: 1.6;
+                                font-weight: bold;
+                                max-width: 800px;
+                                margin: 0 auto;
+                            }
+                            
+                            .design2 span {
+                                color: rgb(231, 164, 116);
+                            }
+                            
+                            /* Responsive Styles */
+                            @media (max-width: 768px) {
+                                .design2 p {
+                                    font-size: 3rem;
+                                }
+                            
+                                .design2 p2 {
+                                    font-size: 1.2rem;
+                                }
+                            
+                                .design2 img {
+                                    width: 150px;
+                                    height: 150px;
+                                }
+                            }
+                            
+                            @media (max-width: 480px) {
+                                .design2 p {
+                                    font-size: 2rem;
+                                }
+                            
+                                .design2 p2 {
+                                    font-size: 1rem;
+                                }
+                            
+                                .design2 img {
+                                    width: 120px;
+                                    height: 120px;
+                                }
+                            }
+                            
+                            /* Additional Attractive Styles */
+                            .design2 {
+                                position: relative;
+                                overflow: hidden;
+                            }
+                            
+                            .design2::before {
+                                content: '';
+                                position: absolute;
+                                top: -50%;
+                                left: -50%;
+                                width: 200%;
+                                height: 200%;
+                                background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+                                background-size: 20px 20px;
+                                animation: animateBackground 10s linear infinite;
+                                z-index: 1;
+                            }
+                            
+                             @keyframes animateBackground {
+                                0% {
+                                    transform: translate(0, 0);
+                            }
+                                100% {
+                                    transform: translate(20px, 20px);
+                                
+                                }
+                            }
+                            
+                            
+                            .design2 p, .design2 p2 {
+                                position: relative;
+                                z-index: 2;
+                            }
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                    /* General Styles */
+                            
+                                                                    /* Devloped by Gore Pallavi EPL */
+                                                                    /* Devloped by monika Kanse EPL  */
+                            
+                            
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                        font-family: Arial, sans-serif;
+                                    }
+                            
+                                    .updeate {
+                                        margin-top: 50px;
+                                        height: auto;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;
+                                        padding: 20px;
+                                    }
+                            
+                                    #updateForm {
+                                        background: rgba(255, 255, 255, 0.1);
+                                        padding: 20px;
+                                        border-radius: 10px;
+                                        backdrop-filter: blur(10px);
+                                        width: 100%;
+                                        max-width: 500px;
+                                        margin: 10px;
+                                    }
+                            
+                                    #updateForm h2 {
+                                        color: #ff5733;
+                                        margin-bottom: 20px;
+                                    }
+                            
+                                    #updateForm input,
+                                    #updateForm textarea {
+                                        width: 100%;
+                                        padding: 10px;
+                                        margin: 10px 0;
+                                        border: 1px solid #ccc;
+                                        border-radius: 5px;
+                                        background: rgba(255, 255, 255, 0.8);
+                                    }
+                            
+                                    #updateForm button {
+                                        background: #ff5733;
+                                        color: white;
+                                        border: none;
+                                        padding: 10px 20px;
+                                        border-radius: 5px;
+                                        cursor: pointer;
+                                        transition: background 0.3s, transform 0.3s;
+                                    }
+                            
+                                    #updateForm button:hover {
+                                        background: #e74c3c;
+                                        transform: scale(1.05);
+                                    }
+                            
+                                    /* Contact Section Styles */
+                                    .contact-section {
+                                        background-color: white;
+                                        padding: 20px;
+                                        border-radius: 10px;
+                                        margin: 20px auto;
+                                        max-width: 900px;
+                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                                    }
+                            
+                                    .contact-section h2,
+                                    .contact-section h3,
+                                    .contact-section p,
+                                    .contact-section a {
+                                        color: black;
+                                    }
+                            
+                                    /* Responsive Styles */
+                                    @media (max-width: 768px) {
+                                        .updeate {
+                                            flex-direction: column;
+                                            align-items: center;
+                                        }
+                            
+                                        #updateForm {
+                                            width: 90%;
+                                        }
+                                    }
+                            
+                                    /* Home Section Styles */
+                                    .home-box {
+                                        text-align: center;
+                                    }
+                            
+                                    .home-box img {
+                                        width: 150px;
+                                        height: 150px;
+                                        border-radius: 50%;
+                                        margin-top: 20px;
+                                    }
+                            
+                                    .btn, .createbtn {
+                                        display: inline-block;
+                                        margin-top: 20px;
+                                        padding: 10px 20px;
+                                        background-color: #ff5733;
+                                        color: white;
+                                        text-decoration: none;
+                                        border-radius: 5px;
+                                        transition: background 0.3s, transform 0.3s;
+                                    }
+                            
+                                    .btn:hover, .createbtn:hover {
+                                        background-color: #e74c3c;
+                                        transform: scale(1.05);
+                                    }
+                            
+                                    /* About Section Styles */
+                                    .design2 {
+                                        padding: 4rem 2rem;
+                                        text-align: center;
+                                        color: #fff;
+                                    }
+                            
+                                    .design2 img {
+                                        width: 200px;
+                                        height: 200px;
+                                        border-radius: 50%;
+                                        margin-bottom: 2rem;
+                                        box-shadow: 
+                                            0 0 1rem #fff,
+                                            inset 0 0 1rem #fff,
+                                            0 0 2rem #3877FF,
+                                            inset 0 0 2rem #3877FF,
+                                            0 0 4rem #3877FF,
+                                            inset 0 0 4rem #3877FF;
+                                        border: 2px solid rgb(255, 255, 255);
+                                        transition: transform 0.3s ease;
+                                    }
+                            
+                                    .design2 img:hover {
+                                        transform: scale(1.1);
+                                    }
+                            
+                                    .design2 p {
+                                        font-size: 4rem;
+                                        margin-bottom: 1rem;
+                                        font-weight: bold;
+                                    }
+                            
+                                    .design2 p2 {
+                                        font-size: 1.5rem;
+                                        line-height: 1.6;
+                                        font-weight: bold;
+                                        max-width: 800px;
+                                        margin: 0 auto;
+                                    }
+                            
+                                    .design2 span {
+                                        color: rgb(231, 164, 116);
+                                    }
+                            
+                                    /* About Section Content */
+                                    .about-content {
+                                        background: rgba(255, 255, 255, 0.1);
+                                        padding: 20px;
+                                        border-radius: 10px;
+                                        margin-top: 20px;
+                                        text-align: left;
+                                        max-width: 800px;
+                                        margin: 0 auto;
+                                        display: none; /* Hide by default */
+                                    }
+                            
+                                    .about-content p {
+                                        margin: 10px 0;
+                                        font-size: 1.2rem;
+                                    }
+                            
+                                    .about-content ul {
+                                        list-style-type: none;
+                                        padding: 0;
+                                        display: inline;
+                                    }
+                            
+                                    .about-content ul li {
+                                        display: inline;
+                                        margin-right: 10px;
+                                    }
+                            
+                                    .about-content ul li:after {
+                                        content: ",";
+                                    }
+                            
+                                    .about-content ul li:last-child:after {
+                                        content: "";
+                                    }
+                            
+                                    /* Responsive Styles for About Section */
+                                    @media (max-width: 768px) {
+                                        .design2 p {
+                                            font-size: 3rem;
+                                        }
+                            
+                                        .design2 p2 {
+                                            font-size: 1.2rem;
+                                        }
+                            
+                                        .design2 img {
+                                            width: 150px;
+                                            height: 150px;
+                                        }
+                                    }
+                            
+                                    @media (max-width: 480px) {
+                                        .design2 p {
+                                            font-size: 2rem;
+                                        }
+                            
+                                        .design2 p2 {
+                                            font-size: 1rem;
+                                        }
+                            
+                                        .design2 img {
+                                            width: 120px;
+                                            height: 120px;
+                                        }
+                                    }
+                            
+                                    /* Additional Attractive Styles */
+                                    .design2 {
+                                        position: relative;
+                                        overflow: hidden;
+                                    }
+                            
+                                    .design2::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: -50%;
+                                        left: -50%;
+                                        width: 200%;
+                                        height: 200%;
+                                        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+                                        background-size: 20px 20px;
+                                        animation: animateBackground 10s linear infinite;
+                                        z-index: 1;
+                                    }
+                            
+                                    @keyframes animateBackground {
+                                        0% {
+                                            transform: translate(0, 0);
+                                        }
+                                        100% {
+                                            transform: translate(20px, 20px);
+                                        }
+                                    }
+                            
+                                    .design2 p, .design2 p2 {
+                                        position: relative;
+                                        z-index: 2;
+                                    }
+                            
+                                    /* Project Section Styles */
+                                    .project-section {
+                                        background: var(--second-bg-color);
+                                        padding: 100px 15%;
+                                    }
+                            
+                                    .project-section .main-text {
+                                        text-align: center;
+                                    }
+                            
+                                    .project-section .main-text h2 {
+                                        font-size: var(--h2-font);
+                                        line-height: 1;
+                                        margin-bottom: 50px;
+                                    }
+                            
+                                    .project-section .portfolio-content {
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+                                        gap: 2.5rem;
+                                        margin-top: 5rem;
+                                    }
+                            
+                                    .project-section .row {
+                                        position: relative;
+                                        overflow: hidden;
+                                        border-radius: 8px;
+                                        cursor: pointer;
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                    }
+                            
+                                    .project-section .row:hover {
+                                        transform: translateY(-10px); /* Lift the card on hover */
+                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+                                    }
+                            
+                                    .project-section .row img {
+                                        width: 100%;
+                                        height: 200px; /* Fixed height for uniformity */
+                                        object-fit: cover; /* Ensure the image covers the area without distortion */
+                                        border-radius: 8px;
+                                        display: block;
+                                        transition: transform 0.5s ease;
+                                    }
+                            
+                                    .project-section .row:hover img {
+                                        transform: scale(1.1); /* Zoom effect on hover */
+                                    }
+                            
+                                    .project-section .layer {
+                                        width: 100%;
+                                        height: 100%;
+                                        background: linear-gradient(rgba(0, 0, 0, 0.5), #00a6ff);
+                                        position: absolute;
+                                        border-radius: 8px;
+                                        left: 0;
+                                        bottom: 0;
+                                        overflow: hidden;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 0 20px;
+                                        opacity: 0; /* Hide layer by default */
+                                        transition: opacity 0.5s ease;
+                                    }
+                            
+                                    .project-section .row:hover .layer {
+                                        opacity: 1; /* Show layer on hover */
+                                    }
+                            
+                                    .project-section .layer h5 {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        margin-bottom: 15px;
+                                        color: white;
+                                    }
+                            
+                                    .project-section .layer p {
+                                        color: white;
+                                        font-size: 1rem;
+                                        line-height: 1.8;
+                                        text-align: center;
+                                    }
+                            
+                                    .project-section .layer i {
+                                        color: var(--main-color);
+                                        margin-top: 20px;
+                                        font-size: 20px;
+                                        background: var(--text-color);
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        transition: background 0.3s ease, transform 0.3s ease;
+                                    }
+                            
+                                    .project-section .layer i:hover {
+                                        background: #00a6ff; /* Change background on hover */
+                                        transform: scale(1.1); /* Scale icon on hover */
+                                    }
+                                    
+                                    body {
+                                        background-image: url('https://img.freepik.com/premium-photo/dark-blue-grunge-texture-wall-background_148157-298.jpg?semt=ais_hybrid');
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-attachment: fixed;
+                                        color: white;
+                                    }
+                                    .contact-section{
+                                        background-color:#ff99bb;
+                                    }
